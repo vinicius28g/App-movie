@@ -29,6 +29,7 @@ export default function Banner() {
     handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [imagesLoaded]);
 
 
@@ -53,6 +54,7 @@ export default function Banner() {
     }, 5000);
 
     return () => clearInterval(interval);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [imagesLoaded, totalSlides, isDragging]);
 
  // ---- Ajuste da posição do slide
