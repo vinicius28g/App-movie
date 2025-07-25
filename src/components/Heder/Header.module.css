@@ -6,15 +6,16 @@
     top: 0;
     display: flex;
     padding: 1rem;
-    font-size: 1.5rem;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    z-index: 2;
 }
 
 .header span{
     color: #f44336;
     font-weight: 500;
+    font-size: 1.5rem;
 }
 
 .header nav a{

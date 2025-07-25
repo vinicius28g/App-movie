@@ -1,0 +1,33 @@
+.Banner {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; /* Garante que o conteúdo fora do contêiner não seja visível */
+  position: relative; /* Necessário para posicionamento correto */
+  margin: 4rem auto 0;
+}
+
+.carousel {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; /* Esconde o conteúdo que ultrapassa a área visível */
+  cursor: grab; /* Cursor para indicar que é arrastável */
+}
+
+.inner {
+  display: flex; /* Organiza os itens em linha */
+  height: 100vh;
+  touch-action: pan-x; /* Permite arrastar apenas no eixo X */
+  willChange: transform; /* Otimiza as transformações */
+}
+
+.item {
+  flex: 0 0 100vw; /* Cada item tem exatamente a largura da viewport */
+  height: 100vh;
+}
+
+.img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover; /* Garante que a imagem cubra o espaço sem distorção */
+  pointer-events: none; /* Evita que as imagens interfiram no arrastar */
+}

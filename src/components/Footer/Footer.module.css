@@ -1,15 +1,15 @@
 .footer{
     background-color: black;
     border-top: 4px solid #f44336;
-    position: fixed;
     width: 100%;
-    bottom: 0;
-    padding: 1rem;
+    padding-block: 1rem;
     font-size: 1.5rem;
     align-items: center;
     justify-content: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
+    bottom: 0;
+    position: relative;
 }
 footer nav {
     display: flex;
